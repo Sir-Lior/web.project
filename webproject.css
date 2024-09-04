@@ -1,65 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medilop</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="path/to/your-logo.png" alt="Medilop Logo" class="logo-image">
-                <h1 class="logo-text">Medilop</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#doctors">Doctors</a></li>
-                    <li><a href="#facility">Facility</a></li>
-                    <li><a href="#about">About Us</a></li>
-                </ul>
-            </nav>
-            <div class="auth-links">
-                <a href="#login" class="login">Login</a>
-                <a href="#signup" class="signup">Sign Up</a>
-            </div>
-        </div>
-    </header>
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Main Content Section -->
-    <main>
-        <!-- Add your main content here -->
-      <section id="home" class="home-section">
-        <div class="container home-content">
-            <div class="text-content">
-                <h1>Empowering Your Health Journey</h1>
-                <p>Your health is our top priority. At Medilop, we combine expertise, compassion, and innovation to provide personalized care tailored to your needs. Discover how our dedicated team and advanced facilities can support you every step of the way.</p>
-                <ul class="features-list">
-                    <li>Customized Health Plans</li>
-                    <li>Expert Medical Team</li>
-                    <li>Advanced Diagnostic Tools</li>
-                    <li>Comprehensive Wellness Support</li>
-                </ul>
-                <a href="#signup" class="btn-signup">Sign Up for Updates</a>
-            </div>
-            <div class="image-content">
-                <img src="https://images.pexels.com/photos/5215016/pexels-photo-5215016.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Medical Care Image">
-            </div>
-        </div>
-    </section>
-    </main>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Medilop. All rights reserved.</p>
-        </div>
-    </footer>
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.auth-links a.login {
+    background-color: #0069d9;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.auth-links a.signup {
+    background-color: #0056b3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 0;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.features-list li {
+    margin-bottom: 0.5rem;
+}
+
+.btn-signup {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .auth-links {
+        margin-top: 1rem;
+    }
+}
