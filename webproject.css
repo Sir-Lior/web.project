@@ -1,125 +1,65 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medilop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="path/to/your-logo.png" alt="Medilop Logo" class="logo-image">
+                <h1 class="logo-text">Medilop</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#facility">Facility</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-links">
+                <a href="#login" class="login">Login</a>
+                <a href="#signup" class="signup">Sign Up</a>
+            </div>
+        </div>
+    </header>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
+    <!-- Main Content Section -->
+    <main>
+        <!-- Add your main content here -->
+      <section id="home" class="home-section">
+        <div class="container home-content">
+            <div class="text-content">
+                <h1>Empowering Your Health Journey</h1>
+                <p>Your health is our top priority. At Medilop, we combine expertise, compassion, and innovation to provide personalized care tailored to your needs. Discover how our dedicated team and advanced facilities can support you every step of the way.</p>
+                <ul class="features-list">
+                    <li>Customized Health Plans</li>
+                    <li>Expert Medical Team</li>
+                    <li>Advanced Diagnostic Tools</li>
+                    <li>Comprehensive Wellness Support</li>
+                </ul>
+                <a href="#signup" class="btn-signup">Sign Up for Updates</a>
+            </div>
+            <div class="image-content">
+                <img src="https://images.pexels.com/photos/5215016/pexels-photo-5215016.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Medical Care Image">
+            </div>
+        </div>
+    </section>
+    </main>
 
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Medilop. All rights reserved.</p>
+        </div>
+    </footer>
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.auth-links {
-    display: flex;
-    align-items: center;
-}
-
-.auth-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 15px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #444;
-    transition: background-color 0.3s;
-}
-
-.auth-links a:hover {
-    background-color: #555;
-}
-
-.auth-links .login {
-    background-color: #007bff;
-}
-
-.auth-links .login:hover {
-    background-color: #0056b3;
-}
-
-.auth-links .signup {
-    background-color: #28a745;
-}
-
-.auth-links .signup:hover {
-    background-color: #218838;
-}
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-}
-
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
+    <script src="script.js"></script>
+</body>
+</html>
