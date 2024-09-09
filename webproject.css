@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #e0f7fa; /* Light cyan for background */
+    background-color: #f4f4f4; /* Light gray for background */
 }
 
 h1, h2, h3, p {
@@ -18,7 +18,7 @@ h1, h2, h3, p {
 }
 
 a {
-    color: #00bcd4; /* Bright cyan for links */
+    color: #007bff; /* Modern blue for links */
     text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: #00796b; /* Deep teal for header */
+    background: #0056b3; /* Deep blue for header */
     color: #fff;
     padding: 1rem 0;
 }
@@ -37,7 +37,7 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -106,6 +106,7 @@ main {
     padding: 2rem 1rem;
 }
 
+/* Home Section */
 .home-section {
     display: flex;
     align-items: center;
@@ -117,7 +118,7 @@ main {
     display: flex;
     flex-direction: row; /* Ensure text is on the left, image on the right */
     align-items: center;
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -151,7 +152,7 @@ main {
 }
 
 .btn-signup {
-    background: #00bcd4;
+    background: #007bff;
     color: #fff;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -160,7 +161,7 @@ main {
 }
 
 .btn-signup:hover {
-    background: #0288d1; /* Slightly darker cyan for hover */
+    background: #0056b3; /* Slightly darker blue for hover */
 }
 
 .image-content {
@@ -180,16 +181,16 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 2rem 0;
-    background: #50c878; /*greenish background for stats */
+    background: #e3f2fd; /* Light blue background for stats */
     padding: 1rem;
     border-radius: 10px;
 }
 
 .stat-item {
     text-align: center;
-    color: #00796b; /* Medium teal for text */
+    color: #0056b3; /* Dark blue for text */
     padding: 1rem;
-    border: 2px solid #00bcd4; /* Bright cyan border */
+    border: 2px solid #007bff; /* Bright blue border */
     border-radius: 10px;
     background: #ffffff; /* White background for contrast */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -201,14 +202,117 @@ main {
     font-size: 2.5rem;
     display: block;
     margin-bottom: 0.5rem;
-    color: #00bcd4; /* Bright cyan for icons */
+    color: #007bff; /* Bright blue for icons */
 }
 
 .stat-item h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-
 }
 
-   
-   
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background-color: #ffffff; /* Clean white for background */
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0056b3; /* Dark blue for headings */
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.service-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 23%; /* Adjust to fit in row */
+    box-sizing: border-box;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.specialists {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.specialist img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.service-icon {
+    width: 50px;
+}
+
+.stats {
+    font-size: 1.2rem;
+}
+
+.chatbot button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.chatbot button:hover {
+    background: #003d80; /* Darker blue for hover */
+}
+
+/* Trading Options Section */
+.trading-types {
+    padding: 50px 0;
+    background-color: #ffffff; /* Clean white for background */
+}
+
+.trading-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.trading-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.trading-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: #0056b3; /* Deep blue for footer */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
