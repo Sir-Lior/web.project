@@ -277,13 +277,19 @@ main {
 }
 
 .chatbot button:hover {
-    background: #003d80; /* Darker blue for hover */
+    background: #004494;
 }
 
 /* Trading Options Section */
 .trading-types {
     padding: 50px 0;
-    background-color: #ffffff; /* Clean white for background */
+    background-color: #f1f1f1; /* Light gray for background */
+}
+
+.trading-types h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0056b3; /* Dark blue for headings */
 }
 
 .trading-boxes {
@@ -300,19 +306,492 @@ main {
     padding: 20px;
     text-align: center;
     flex: 1;
-    max-width: 30%;
+    max-width: 30%; /* Adjust to fit in row */
     box-sizing: border-box;
 }
 
 .trading-box img {
-    width: 50px;
+    width: 100%;
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
-/* Footer Styles */
-footer {
-    background: #0056b3; /* Deep blue for footer */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+.trading-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
 }
+
+/* Best Traders Section */
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.best-traders {
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding for spacing */
+}
+
+.best-traders h2 {
+    font-size: 28px;
+    color: #333; /* Dark color for heading */
+    text-align: center; /* Center align heading */
+    margin-bottom: 40px; /* Space below heading */
+}
+
+.traders {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+.trader {
+    background-color: #fff; /* White background for each trader card */
+    border-radius: 8px; /* Rounded corners for each card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+    overflow: hidden; /* Ensure image and text fit within the card */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding inside each card */
+}
+
+.trader img {
+    width: 100%; /* Ensure image takes up full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.trader p {
+    font-size: 16px;
+    color: #555; /* Slightly lighter color for text */
+}
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.how-to-get-started {
+    background-color: #eaf1f9; /* Light blue background for contrast */
+    padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding for spacing */
+}
+
+.how-to-get-started h2 {
+    font-size: 28px;
+    color: #333; /* Dark color for heading */
+    text-align: center; /* Center align heading */
+    margin-bottom: 40px; /* Space below heading */
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+.step {
+    background-color: #fff; /* White background for each step card */
+    border-radius: 8px; /* Rounded corners for each card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+    padding: 20px; /* Padding inside each card */
+    text-align: center; /* Center align text */
+}
+
+.icon {
+    font-size: 36px; /* Size of the icon */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.step h3 {
+    font-size: 18px;
+    color: #333; /* Dark color for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.step p {
+    font-size: 16px;
+    color: #666; /* Lighter color for text */
+}
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles specifically for the Expertise on Demand section */
+.expertise-on-demand {
+    background-color: #f4f4f4; /* Light background color for contrast */
+    padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.expertise-on-demand .container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding for spacing */
+}
+
+.expertise-on-demand .text-content {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.expertise-on-demand .text-content h2 {
+    font-size: 28px;
+    color: #333; /* Dark color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.expertise-on-demand .text-content p {
+    font-size: 16px;
+    color: #666; /* Lighter color for paragraph text */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.expertise-on-demand .btn-find-doctor {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Button background color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.expertise-on-demand .btn-find-doctor:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.expertise-on-demand .image-content {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.expertise-on-demand .image-content img {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for image */
+}
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles specifically for the Urgent Trading Solutions section */
+.urgent-solutions {
+    background-color: #fff; /* White background for contrast */
+    padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.urgent-solutions .container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between image and text */
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding for spacing */
+}
+
+.urgent-solutions .urgent-solutions-content {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between image and text */
+    width: 100%; /* Ensure content takes up full width */
+}
+
+.urgent-solutions .urgent-solutions-image {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.urgent-solutions .urgent-solutions-image img {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for image */
+}
+
+.urgent-solutions .urgent-solutions-text {
+    flex: 1; /* Take up remaining space */
+}
+
+.urgent-solutions .urgent-solutions-text h2 {
+    font-size: 28px;
+    color: #333; /* Dark color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.urgent-solutions .urgent-solutions-text p {
+    font-size: 16px;
+    color: #666; /* Lighter color for paragraph text */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.urgent-solutions .btn-consultation {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Button background color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.urgent-solutions .btn-consultation:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the Testimonials section */
+.testimonials {
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    padding: 40px 0; /* Vertical padding for spacing */
+}
+
+.testimonials .container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding for spacing */
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #333; /* Dark color for heading */
+    text-align: center; /* Center align heading */
+    margin-bottom: 40px; /* Space below heading */
+}
+
+.testimonial-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+.testimonial-item {
+    background-color: #fff; /* White background for each testimonial */
+    border-radius: 8px; /* Rounded corners for each testimonial */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for card */
+    padding: 20px; /* Padding inside each testimonial card */
+    text-align: center; /* Center align text */
+}
+
+.testimonial-text {
+    margin-bottom: 20px; /* Space below testimonial text */
+}
+
+.testimonial-text p {
+    font-size: 16px;
+    color: #666; /* Lighter color for testimonial text */
+    line-height: 1.5; /* Improve readability */
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align author section */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.testimonial-author img {
+    border-radius: 50%; /* Circular avatar */
+    width: 80px; /* Avatar size */
+    height: 80px; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below avatar */
+}
+
+.testimonial-author h3 {
+    font-size: 18px;
+    color: #333; /* Dark color for author name */
+    margin-bottom: 5px; /* Space below author name */
+}
+
+.testimonial-author p {
+    font-size: 14px;
+    color: #999; /* Lighter color for author role */
+}
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styles for the Easy Registration section */
+.easy-registration {
+    background-color: #e0f7fa; /* Light cyan background for a fresh look */
+    padding: 40px 0; /* Vertical padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+.easy-registration .container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding for spacing */
+}
+
+.easy-registration h2 {
+    font-size: 30px;
+    color: #00796b; /* Teal color for the heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.easy-registration p {
+    font-size: 18px;
+    color: #004d40; /* Darker teal color for the paragraph text */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+.easy-registration .btn-register {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00796b; /* Teal background color for the button */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.easy-registration .btn-register:hover {
+    background-color: #004d40; /* Darker teal color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the Footer */
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+}
+
+.footer-container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Horizontal padding */
+    display: flex;
+    justify-content: space-between; /* Space out social media icons and footer columns */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-social {
+    display: flex; /* Arrange social media icons horizontally */
+    gap: 10px; /* Space between social media icons */
+    align-items: center; /* Vertically center icons */
+}
+
+.social-link {
+    color: #fff; /* White text color for links */
+    font-size: 18px; /* Font size for social media icons */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-link:hover {
+    color: #ddd; /* Light color on hover */
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px; /* Space between footer columns */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: calc(100% - 180px); /* Adjust width to account for the social media section */
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each column */
+    min-width: 150px; /* Minimum width for columns */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Space below the heading */
+    color: #fff; /* White text color */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.footer-column ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 14px; /* Font size for links */
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+
+
