@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader's Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            color: #495057;
+        }
+
+        .profile-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border: 3px solid #007bff;
+        }
+
+        .profile-header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .profile-header p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #6c757d;
+        }
+
+        .profile-section {
+            margin-bottom: 30px;
+        }
+
+        .profile-section h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .profile-section p {
+            margin: 10px 0;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .profile-section .button-group {
+            margin-top: 20px;
+        }
+
+        .profile-section .button-group a {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            margin-right: 15px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .profile-section .button-group a:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .profile-footer {
+            text-align: center;
+            border-top: 2px solid #dee2e6;
+            padding-top: 20px;
+        }
+
+        .profile-footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .profile-footer a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/120" alt="Profile Picture">
+            <div>
+                <h1>Jane Smith</h1>
+                <p>Username: janesmith</p>
+                <p>Email: janesmith@example.com</p>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h2>About Jane</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras vel justo quis tortor pulvinar laoreet.</p>
+        </div>
+
+        <div class="profile-section">
+            <h2>Trading Statistics</h2>
+            <p>Total Trades: 200</p>
+            <p>Successful Trades: 170</p>
+            <p>Success Rate: 85%</p>
+            <p>Average Return: 12% per annum</p>
+        </div>
+
+        <div class="profile-section">
+            <h2>Recent Activities</h2>
+            <p>Trade #1: Buy AAPL - $160</p>
+            <p>Trade #2: Sell TSLA - $710</p>
+            <p>Trade #3: Buy MSFT - $310</p>
+        </div>
+
+        <div class="profile-section button-group">
+            <a href="message.html">Send Message</a>
+            <a href="follow.html">Follow</a>
+        </div>
+
+        <div class="profile-footer">
+            <a href="traders-list.html">Back to Traders List</a>
+        </div>
+    </div>
+</body>
+</html>
