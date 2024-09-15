@@ -119,9 +119,57 @@ nav ul li a {
 .auth-links .signup:hover {
     background: var(--color-primary-light);
 }
-/* Main Container */
-main {
-    padding: 2rem 1rem;
+
+/* Hide the toggle button on large screens */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Style for active state of the navigation menu */
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color-header-bg);
+    width: 100%;
+}
+
+/* Hide the menu by default on mobile */
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Show menu items horizontally on large screens */
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none; /* Hide toggle button on large screens */
+    }
+
+    nav ul {
+        display: flex; /* Show menu items as a horizontal list */
+        flex-direction: row;
+    }
+}
+
+/* Show the toggle button on small screens and hide the menu items */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide menu items by default on small screens */
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu items when the toggle button is clicked */
+    }
 }
 
 /* Home Section */
@@ -134,39 +182,41 @@ main {
 
 .home-content {
     display: flex;
-    flex-direction: row; /* Text on the left, image on the right */
+    flex-direction: row; /* Text on the left, video on the right */
     align-items: center;
     max-width: 960px;
     margin: 0 auto;
+    gap: 1.5rem; /* Add gap between text and video */
 }
 
 .text-content {
     max-width: 50%;
+    padding: 1rem; /* Add padding to text content */
 }
 
 .text-content h1 {
     font-size: 2.5rem;
-    color: var(--color-primary); /* Dark blue for main headings */
-    margin-bottom: 0.5rem; /* Consistent spacing below headings */
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
 }
 
 .text-content h2 {
     font-size: 1.75rem;
-    color: var(--color-primary-light); /* Medium blue for subheadings */
+    color: var(--color-primary-light);
     margin-bottom: 1rem;
 }
 
 .text-content p {
     margin-bottom: 1.5rem;
-    color: var(--color-text); /* Dark grey for text */
-    line-height: 1.7; /* Improve readability */
+    color: var(--color-primary);
+    line-height: 1.7;
 }
 
 .features-list {
     list-style: disc;
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
-    color: var(--color-text); /* Ensure list text color matches the body text */
+    color: var(--color-primary);
 }
 
 .features-list li {
@@ -174,35 +224,60 @@ main {
 }
 
 /* Button Styles */
-.btn-signup {
+.btn-signup, .btn-play-video {
     background: var(--color-primary);
     color: #fff;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     font-weight: bold;
-    text-align: center; /* Ensure text is centered */
-    transition: background 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
-    border: none; /* Ensure button has no border */
-    cursor: pointer; /* Pointer cursor for buttons */
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 1.5rem auto; /* Center the button */
 }
 
-.btn-signup:hover {
-    background: var(--color-primary-light); /* Slightly lighter blue for hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover for depth */
+.btn-signup:hover, .btn-play-video:hover {
+    background: var(--color-primary-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Image Content */
-.image-content {
-    max-width: 50%;
-    padding-left: 1rem; /* Space between text and image */
+/* Video Content */
+.video-content {
+    max-width: 100%;
+    padding-left: 1rem; /* Space between text and video */
 }
 
-.image-content img {
-    width: 80%;
+.video-content video {
+    width: 100%; /* Make video responsive */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern shadow */
-    object-fit: cover; /* Ensure image maintains aspect ratio */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .video-content {
+        max-width: 100%;
+    }
+
+    .btn-signup, .btn-play-video {
+        width: 100%;
+    }
+}
+
+
+
 /* CSS Variables for Dark Blue Theme */
 :root {
     --color-primary: #003366; /* Dark blue for primary elements */
