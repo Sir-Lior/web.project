@@ -1,4 +1,4 @@
-/* CSS Variables */
+
 :root {
     --color-primary: #003366; /* Dark blue for primary elements */
     --color-primary-light: #004080; /* Slightly lighter blue for hover states */
@@ -754,7 +754,7 @@ body {
 }
 
 .expertise-on-demand .btn-find-trader:hover {
-    background-color: #0056b3; /* Darker button color on hover */
+    background-color: #003366; /* Darker button color on hover */
 }
 
 .expertise-on-demand .image-content {
@@ -1106,3 +1106,7 @@ nav ul {
     nav ul.active {
         display: flex; /* Show menu items when the toggle button is clicked */
     }
+
+
+
+      
