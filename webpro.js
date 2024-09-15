@@ -51,3 +51,13 @@ document.addEventListener('DOMContentLoaded', () => {
         navMenu.classList.toggle('active');
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+        const playButton = document.getElementById('play-video');
+        const video = document.getElementById('intro-video');
+
+        playButton.addEventListener('click', function() {
+            // Play the video
+            video.play();
+        });
+    });
+
