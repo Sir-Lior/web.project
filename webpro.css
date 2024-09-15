@@ -275,9 +275,6 @@ nav ul {
         width: 100%;
     }
 }
-
-
-
 /* CSS Variables for Dark Blue Theme */
 :root {
     --color-primary: #003366; /* Dark blue for primary elements */
@@ -287,55 +284,89 @@ nav ul {
     --color-text-light: #00509e; /* Slightly lighter dark blue for secondary text */
 }
 
-/* Stats Section */
+/* Base Styles */
 .stats {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     justify-content: space-around;
-    align-items: stretch; /* Ensure equal height for items */
+    align-items: stretch;
     margin: 2rem 0;
-    background: var(--color-background); /* Very light blue for a soft background */
+    background: var(--color-background);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .stat-item {
     text-align: center;
-    color: var(--color-text); /* Dark blue for text */
-    padding: 1.5rem; /* Increased padding for better spacing */
-    border: 2px solid var(--color-primary-light); /* Light blue border */
+    color: var(--color-text);
+    padding: 1.rem;
+    border: 1px solid var(--color-primary-light);
     border-radius: 10px;
-    background: #ffffff; /* White background for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
-    flex: 1;
-    margin: 0 0.5rem; /* Reduced margin for better spacing */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 1rem); /* Flex basis for larger screens */
+    margin: 0.5rem; /* Margins for spacing */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .stat-item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .stat-item .icon {
-    font-size: 3rem; /* Larger icon for better visibility */
-    color: var(--color-primary); /* Dark blue for icons */
-    margin-bottom: 0.75rem; /* Increased margin for spacing */
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
 }
 
 .stat-item h1 {
-    font-size: 2.25rem; /* Slightly larger font size for headings */
+    font-size: 2.25rem;
     margin-bottom: 0.5rem;
-    color: var(--color-primary); /* Dark blue for headings */
-    line-height: 1.2; /* Improved readability with line height */
+    color: var(--color-primary);
+    line-height: 1.2;
 }
 
 .stat-item p {
-    font-size: 1.125rem; /* Larger font size for paragraph text */
-    color: var(--color-text-light); /* Slightly lighter dark blue for text */
-    line-height: 1.5; /* Improved readability */
-    margin: 0; /* Remove default margin */
+    font-size: 1.125rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .stat-item {
+        flex: 1 1 calc(33.33% - 1rem); /* Adjust for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .stat-item {
+        flex: 1 1 calc(50% - 1rem); /* Adjust for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-item {
+        flex: 1 1 100%; /* Stack items on small screens */
+        margin: 0.5rem 0; /* Adjust margins for stacking */
+    }
+
+    .stat-item .icon {
+        font-size: 2rem; /* Smaller icon for smaller screens */
+    }
+
+    .stat-item h1 {
+        font-size: 1.75rem; /* Smaller font size for headings */
+    }
+
+    .stat-item p {
+        font-size: 1rem; /* Smaller font size for paragraphs */
+    }
+}
+
 /* CSS Variables for Dark Blue Theme */
 :root {
     --color-primary: #003366; /* Dark blue for primary elements */
