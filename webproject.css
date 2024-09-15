@@ -950,3 +950,53 @@ body {
         margin-bottom: 20px;
     }
 }
+/* Hide the toggle button on large screens */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Style for active state of the navigation menu */
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--color-header-bg);
+    width: 100%;
+}
+
+/* Hide the menu by default on mobile */
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Show menu items horizontally on large screens */
+@media (min-width: 769px) {
+    .nav-toggle {
+        display: none; /* Hide toggle button on large screens */
+    }
+
+    nav ul {
+        display: flex; /* Show menu items as a horizontal list */
+        flex-direction: row;
+    }
+}
+
+/* Show the toggle button on small screens and hide the menu items */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide menu items by default on small screens */
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu items when the toggle button is clicked */
+    }
